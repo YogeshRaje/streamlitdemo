@@ -10,7 +10,7 @@ c=['Purchased'],['Not Purchased']
 age=st.slider("Enter Age of customer  ",10,100)
 salary=st.slider("Enter Estimated Salary",1500,15000)
 
-loaded_model=joblib.load(open('Final_model.pkl','rb'))
+loaded_model=joblib.load(open('fsk.pkl','rb'))
 
 prediction= loaded_model.predict([[age,salary]])
 
