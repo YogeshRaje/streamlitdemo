@@ -1,5 +1,5 @@
 import streamlit as st
-pip install joblib
+!pip install joblib
 import joblib
 
 st.title('Netwrok Ad purchased or Not ')
