@@ -1,6 +1,6 @@
 import streamlit as st
 
-import pikle
+import pickle
 
 st.title('Netwrok Ad purchased or Not ')
 c=['Purchased'],['Not Purchased']
@@ -11,7 +11,7 @@ c=['Purchased'],['Not Purchased']
 age=st.slider("Enter Age of customer  ",10,100)
 salary=st.slider("Enter Estimated Salary",1500,15000)
 
-loaded_model=pikle.load(open('fsk.pkl','rb'))
+loaded_model=pickle.load(open('fsk.pkl','rb'))
 
 prediction= loaded_model.predict([[age,salary]])
 
